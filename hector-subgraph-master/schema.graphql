@@ -1,0 +1,49 @@
+type Rebase @entity {
+  id: ID!
+  transaction: String!
+  amount: BigDecimal!
+  stakedHecs: BigDecimal!
+  percentage: BigDecimal!
+  contract: String!
+  timestamp: BigInt!
+  value: BigDecimal!
+}
+
+type ProtocolMetric @entity {
+  id: ID!
+  timestamp: BigInt!
+  hecCirculatingSupply: BigDecimal!
+  sHecCirculatingSupply: BigDecimal!
+  totalSupply: BigDecimal!
+  hecPrice: BigDecimal!
+  marketCap: BigDecimal!
+  totalValueLocked: BigDecimal!
+  treasuryRiskFreeValue: BigDecimal!
+  treasuryMarketValue: BigDecimal!
+  treasuryInvestments: BigDecimal!
+  nextEpochRebase: BigDecimal!
+  nextDistributedHec: BigDecimal!
+  treasuryDaiRiskFreeValue: BigDecimal!
+  treasuryUsdcRiskFreeValue: BigDecimal!
+  treasuryWFTMRiskFreeValue: BigDecimal!
+  treasuryMIMRiskFreeValue: BigDecimal!
+  treasuryFRAXRiskFreeValue: BigDecimal!
+  treasuryGOHMRiskFreeValue: BigDecimal!
+  treasuryDaiMarketValue: BigDecimal!
+  treasuryUsdcMarketValue: BigDecimal!
+  treasuryWFTMMarketValue: BigDecimal!
+  treasuryMIMMarketValue: BigDecimal!
+  treasuryFRAXMarketValue: BigDecimal!
+  treasuryGOHMMarketValue: BigDecimal!
+  currentAPY: BigDecimal!
+  runwayCurrent: BigDecimal
+  treasuryHecDaiPOL: BigDecimal!
+  treasuryHecUsdcPOL: BigDecimal!
+  treasuryHecFraxPOL: BigDecimal!
+}
+
+type LastBlock @entity {
+  id: ID!
+  number: BigInt!
+  timestamp: BigInt!
+}

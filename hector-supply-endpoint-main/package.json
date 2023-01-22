@@ -1,0 +1,12 @@
+{
+  "name": "hector-supply-endpoint",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Hector-DAO/hector-supply-endpoint.git",
+  "author": "Dmitriy Lazarev <w@kich.dev>",
+  "license": "MIT",
+  "dependencies": {
+    "ethers": "^5.5.1",
+    "express": "^4.17.1"
+  }
+}
